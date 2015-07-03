@@ -293,7 +293,7 @@ void stackblurJob(unsigned char* src,                ///< input image data
     }
 }
 
-JNIEXPORT void JNICALL Java_com_enrique_stackblur_NativeBlurProcess_functionToBlur(JNIEnv* env, jclass clzz, jobject bitmapOut, jint radius, jint threadCount, jint threadIndex, jint round) {
+JNIEXPORT void JNICALL Java_cn_gavinliu_android_lib_drawable_BlurProcess_functionToBlur(JNIEnv* env, jclass clzz, jobject bitmapOut, jint radius, jint threadCount, jint threadIndex, jint round) {
     // Properties
     AndroidBitmapInfo   infoOut;
     void*               pixelsOut;
