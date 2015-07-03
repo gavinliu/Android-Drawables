@@ -10,8 +10,65 @@
 
     <ImageView
         android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/album" />
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/top"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="T" />
+
+        <Button
+            android:id="@+id/bottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="L" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="R" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/palette"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/xx" />
+        android:layout_above="@+id/buttonPanel"
+        android:text="Use Palette" />
 
 </RelativeLayout>
