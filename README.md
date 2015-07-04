@@ -1,7 +1,18 @@
 # Android-Drawables
 
-### BlurDrawable
+### BlurDrawable(Base on [StackBlur](https://github.com/kikoso/android-stackblur))
 
 ![](/art/blur.gif)
 
-Base [StackBlur](https://github.com/kikoso/android-stackblur)
+```java
+new BlurDrawable(getResources(),
+                bitmap,
+                Gravity.FILL, // Blur Rect Gravity
+                bitmap.getHeight() / 3, // Blur Rect size
+                true // Use Palette
+                );
+```
+
+## TODO
++ URIDrawable
++ CircleDrawale
