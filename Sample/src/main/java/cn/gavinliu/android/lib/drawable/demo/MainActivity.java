@@ -44,19 +44,19 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         switch (view.getId()) {
             case R.id.fill:
-                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.FILL, bitmap.getHeight() / 2, usePalette);
+                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.FILL, bitmap.getHeight() / 3, usePalette);
                 break;
             case R.id.top:
-                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.TOP, bitmap.getHeight() / 2, usePalette);
+                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.TOP, bitmap.getHeight() / 3, usePalette);
                 break;
             case R.id.bottom:
-                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.BOTTOM, bitmap.getHeight() / 2, usePalette);
+                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.BOTTOM, bitmap.getHeight() / 3, usePalette);
                 break;
             case R.id.left:
-                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.LEFT, bitmap.getHeight() / 2, usePalette);
+                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.LEFT, bitmap.getHeight() / 3, usePalette);
                 break;
             case R.id.right:
-                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.RIGHT, bitmap.getHeight() / 2, usePalette);
+                blurDrawable = new BlurDrawable(getResources(), bitmap, Gravity.RIGHT, bitmap.getHeight() / 3, usePalette);
                 break;
         }
 
